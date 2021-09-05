@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CREATORS SQUAD - Platform for fans to express Gratitude to the Creators!...</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
+  <!-- <link rel="icon" type="image/x-icon" href="assets/favicon32.png"> -->
+
+  <!-- <link href="assets/css_smart-forms.css" rel="stylesheet">
+  <link href="assets/smart-addons.css" rel="stylesheet"> -->
+  <!--<link href="assets/filepond-plugin-image-preview.css" rel="stylesheet"> -->
+  <!-- <script src="assets/jquery.min.js"></script> -->
+
+<link rel="stylesheet" href="styles.0c9bfa4a419ada5d9a61.css"></head>
+
+<body>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <app-root></app-root>
+
+  <!-- <div class="container">
+    <div class="form-group">
+      <div class="row col-sm-12">
+        <div class="col-sm-12 mx-auto">
+          <div class="col-sm-12 jumbotron">
+            <div class="DashboardContainer">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- <script src="assets/dropzone.min.js"></script> -->
+  <!-- <script src="assets/filepond.js"></script>
+  <script>
+    FilePond.registerPlugin(FilePondPluginImagePreview);
+  </script> -->
+  <script>
+    document.addEventListener('keyup', (e) => {
+      if (e.key == 'PrintScreen') {
+        navigator.clipboard.writeText('');
+        alert('Screenshots disabled!');
+      }
+    });
+
+    /** TO DISABLE PRINTS WHIT CTRL+P **/
+    document.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && e.key == 'p') {
+        alert('This section is not allowed to print or export to PDF');
+        e.cancelBubble = true;
+        e.preventDefault();
+        e.stopImmediatePropagation();
+      }
+    });
+
+    /* TO DO: There are combinations that remain to be solved
+        --> Windows+Shift+S
+    */</script>
+<script src="runtime-es2015.3f3fc55b246d2a4b8254.js" type="module"></script><script src="polyfills-es2015.ced990e3a0659bcf9b4e.js" type="module"></script><script src="runtime-es5.96f7c8f8b53ed2a89900.js" nomodule defer></script><script src="polyfills-es5.522fe132668d115f3618.js" nomodule defer></script><script src="styles-es2015.d590bc9858cc8d7b4296.js" type="module"></script><script src="scripts.a8e8331001c65cfd1fbe.js" defer></script><script src="main-es2015.93f04a479e3d46482677.js" type="module"></script><script src="main-es5.4b0e0bb30f9b48118f6c.js" nomodule defer></script></body>
+
+</html>
